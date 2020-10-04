@@ -1,6 +1,9 @@
 pixSortableBehaviorBundle
 =========================
 
+Fork of original project with the aim to allow compatibility with
+SonataUserBundle
+
 Offers a sortable feature for your Symfony2 admin listing
 
 ### SonataAdminBundle implementation

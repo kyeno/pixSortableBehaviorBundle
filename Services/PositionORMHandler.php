@@ -46,6 +46,10 @@ class PositionORMHandler extends PositionHandler
     public function getLastPosition($entity)
     {
         $entityClass = ClassUtils::getClass($entity);
+
+        // ** NOTE: Disabled to allow sorting of SonataUserBundle entities
+        //          This may break compatibility with relational sorting and leaves just simple sorting options
+        /*
         $parentEntityClass = true;
         while ($parentEntityClass)
         {
@@ -58,6 +62,7 @@ class PositionORMHandler extends PositionHandler
                 $entityClass = $parentEntityClass;
             }
         }
+        */
         
         $groups      = $this->getSortableGroupsFieldByEntity($entityClass);
 
